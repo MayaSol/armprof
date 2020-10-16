@@ -1,0 +1,12 @@
+*.docx
+*.docx#
+*.zip
+armprof_for_mayasol/
+docs/
+Attachments*
+old/
+armprof_final/
+armprof_maiia/
+video_new/
+temp/
+img/temp/
