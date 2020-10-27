@@ -3,6 +3,41 @@ http://3.armprof.ru/
 https://www.armprof.ru/catalog/zadvizhki-klinovye/
 https://www.armprof.ru/catalog/zadvizhki-klinovye/DOMEX-F4-RC-DN40-DN300/
 
+
+=====================================
+15.10.2020
+========================================
+
+1.https://www.armprof.ru/producers/domex/
+
+К списку товаров <div class=" category_products_wrap"> добавить обертку <div class="category-products">:
+
+<div class="category-products">
+    <div class=" category_products_wrap">
+        ...
+    </div>
+</div>
+
+=====================================
+15.10.2020
+========================================
+screen.css
+screen_media.css
+
+utils.js
+(<script> в html)
+script.js - из uilts
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.find,Promise,Object.assign"></script>
+<script src="/js/utils.js"></script>    
+<script src="/js/script.js"></script>
+
+
+popper.js ?
+tippy.js ?
+
+polyfill
+
 =====================================
 15.10.2020
 ========================================

@@ -1,0 +1,19 @@
+{
+  "name": "NTH-start-project",
+  "version": "4.0.0",
+  "description": "Startkit for HTML/CSS/JS pages layout.",
+  "author": "Nikolay Gromov",
+  "license": "WTFPL",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicothin/NTH-start-project.git"
+  },
+  "dependencies": {
+    "browserlist": "^1.0.1",
+    "caniuse-lite": "^1.0.30001148"
+  }
+}

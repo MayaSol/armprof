@@ -928,8 +928,8 @@ var loadFunc = function loadFunc() {
 
 $('.add-to-compare').live('click', function () {
   var variant = $(this).data("id");
+  var desc = $(this).closest('.category-item').find('.ct-discript').html();
   var desc = $(this).data("name");
-  console.log('desc = ' + desc); 
 
   if (variant > 0) {
     $('#CompareInfo').load("/classes/ajax/AjaxUpdate.php", {
@@ -939,16 +939,22 @@ $('.add-to-compare').live('click', function () {
       $('.btn--compare .action-amount').text(parseInt($('.btn--compare .action-amount').text()) + 1);
 
       if (status == "success") {
-        showAlert('Товар <b>' + desc + '</b> добавлен в сравнение.');
+        showAlert('Товар ' + desc + ' добавлен в сравнение.');
       }
     });
   }
 });
-
 $('.add-to-cart').live('click', function () {
-  var desc = $(this).data("name");
-  console.log('desc = ' + desc); 
+  // var desc = $(this).closest('.category-item').find('.ct-discript').html();
+  console.log('addtocart');
+  console.log(this);
+  var btnAdd = this;
 
+  var showAlertProxy = function() {
+    console.log('showAlertProxy');
+    console.log(btnAdd);
+    showAlert('Товар ' + $(btnAdd).closest('.category-item').find('.ct-discript').html() + ' добавлен в корзину.');
+  }
   var variant = $(this).data("id");
 
   if (variant > 0) {
@@ -977,15 +983,14 @@ $('.add-to-cart').live('click', function () {
     }, function (response, status, xhr) {
       if (status == "success") {
         loadFunc();
-        showAlert('Товар <b>' + desc + '</b> добавлен в корзину.');
+        showAlertProxy();
       }
     });
   }
 });
 
 function add_to_fav(id, btn) {
-  var desc = $(btn).data("name");
-  console.log(desc);
+  var desc = $(btn).closest('.category-item').find('.ct-discript').html();
   jQuery.ajax({
     url: "/?module=favorite&par=add",
     type: "POST",
@@ -994,7 +999,7 @@ function add_to_fav(id, btn) {
     },
     success: function success(response) {
       loadFunc();
-      showAlert('Товар <b>' + desc + '</b> добавлен в избранное.');
+      showAlert('Товар ' + desc + ' добавлен в избранное.');
       $("#count-fav-prod").text(response);
     }
   });
