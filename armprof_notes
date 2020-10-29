@@ -3,10 +3,26 @@ http://3.armprof.ru/
 https://www.armprof.ru/catalog/zadvizhki-klinovye/
 https://www.armprof.ru/catalog/zadvizhki-klinovye/DOMEX-F4-RC-DN40-DN300/
 
+=====================================
+29.10.2020
+========================================
+1. а вот тут сеточка нарушена
+https://www.armprof.ru/producers/ige/
+https://www.armprof.ru/producers/
+по блокам Н1 и хк, у нас на других страницах по другому, с отступами
+
+2.еще тут https://www.armprof.ru/catalog/zadvizhki-klinovye/DOMEX-F4-RC-DN40-DN300/ подслетело http://joxi.ru/l2Zv537Sz4B9e2
+
+3. а тут может увеличить иконки http://joxi.ru/brRD1d3u7eNjN2 чтобы были соразмерны по высоте с кнопкой "заказать"?
+
 
 =====================================
 15.10.2020
 ========================================
+
+script.js
+screen.css
+
 
 1.https://www.armprof.ru/producers/domex/
 
@@ -17,6 +33,8 @@ https://www.armprof.ru/catalog/zadvizhki-klinovye/DOMEX-F4-RC-DN40-DN300/
         ...
     </div>
 </div>
+
+2. 
 
 =====================================
 15.10.2020

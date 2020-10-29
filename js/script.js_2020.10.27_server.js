@@ -339,16 +339,9 @@ $(function () {
 var getTemplate = function getTemplate(cartBtnElem, templateSelector) {
   var template = $(cartBtnElem).siblings(templateSelector);
   return template;
-}; 
+}; //  Модалка корзины
 
 
-function cartBtnMain(instance) {
-  $($(instance.popper).find('.btn--main')).click(function() {
-    instance.hide();
-  })
-}
-
-//  Модалка корзины
 var setCartTooltip = function setCartTooltip(btn) {
   var template = getTemplate(btn, '.tooltip--cart');
 
@@ -367,11 +360,7 @@ var setCartTooltip = function setCartTooltip(btn) {
       // hideOnClick: false,
       interactive: true,
       maxWidth: document.documentElement.clientWidth > 480 ? '469px' : '320px',
-      offset: [-105, 0],
-      onMount(instance) {
-        console.log('tooltip cart mounted');
-        cartBtnMain(instance);
-      }
+      offset: [-105, 0]
     };
     tippy(btn, tooltipCartOpt);
   }
@@ -395,24 +384,15 @@ var setFavTooltip = function setFavTooltip(btn) {
     };
     tippy(btn, tooltipFavOpt);
   }
-}; 
-
-
-
-//мультиселект чекбоксы
+}; //мультиселект чекбоксы
 
 
 $(document).ready(function () {
-  console.log('ready');
-
-  objectFitImages();
-
   var tooltipsCart = document.querySelectorAll('.has-tooltip--cart');
 
   for (var i = 0; i < tooltipsCart.length; i++) {
     setCartTooltip(tooltipsCart[i]);
   }
-
 
   var tooltipsFav = document.querySelectorAll('.has-tooltip--favorite');
 
@@ -420,6 +400,7 @@ $(document).ready(function () {
     setFavTooltip(tooltipsFav[_i]);
   }
 
+  objectFitImages();
 
   if ($("#video")[0] !== undefined) {
     $("#video")[0].load();
@@ -930,13 +911,11 @@ function show_reg_sel() {
 }
 
 var showAlert = function showAlert(text) {
-  console.log('showAlert');
-  var alert = $('footer').before('<div class="alert alert--product">' + text + '<button type="button" class="close">&times;</button></div>');
-  setTimeout(function() {$(document.querySelector('.alert--product')).remove();}, 2000);
+  $('.alert').remove();
+  $('footer').after('<div class="alert">' + text + '<button type="button" class="close">&times;</button></div>');
   $('.alert .close').click(function () {
     $(this).closest('.alert').remove();
   });
-
 };
 
 var loadFunc = function loadFunc() {
@@ -950,6 +929,7 @@ var loadFunc = function loadFunc() {
 $('.add-to-compare').live('click', function () {
   var variant = $(this).data("id");
   var desc = $(this).data("name");
+  console.log('desc = ' + desc); 
 
   if (variant > 0) {
     $('#CompareInfo').load("/classes/ajax/AjaxUpdate.php", {
@@ -967,6 +947,7 @@ $('.add-to-compare').live('click', function () {
 
 $('.add-to-cart').live('click', function () {
   var desc = $(this).data("name");
+  console.log('desc = ' + desc); 
 
   var variant = $(this).data("id");
 
@@ -1004,6 +985,7 @@ $('.add-to-cart').live('click', function () {
 
 function add_to_fav(id, btn) {
   var desc = $(btn).data("name");
+  console.log(desc);
   jQuery.ajax({
     url: "/?module=favorite&par=add",
     type: "POST",
