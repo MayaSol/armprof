@@ -92,7 +92,7 @@
     }
 
     .category-products--list .btn--list {
-        background-image: url(../img/new_img/list-view-hover.png);
+        background-image: url(/images/new_img/list-view-hover.png);
     }
 
     .category-products--list .ct-price {
@@ -745,7 +745,8 @@
         -ms-flex-negative: 0;
             flex-shrink: 0;
     }
-    .produkt-price {
+    .produkt-price,
+    p.produkt-price {
         margin-bottom: 15px;
     }
     .produkt-controls {
@@ -1599,6 +1600,7 @@
         margin-right: auto;
         margin-bottom: 20px;
     }
+
 }
 
 
@@ -1607,6 +1609,10 @@
     .main-slider {
         min-height: 0;
         padding-bottom: 65px;
+    }
+
+    .main-slider-item {
+        min-height: 0;
     }
 
     .main-slider.tns-slider .main-slider-item.tns-slide-active {
@@ -1680,6 +1686,10 @@
         -ms-flex-wrap: wrap;
         -o-flex-wrap: wrap;
         flex-wrap: wrap;
+    }
+
+    #topcontrol {
+        display: none;
     }
 }
 /*# sourceMappingURL=screen_media.css.map */

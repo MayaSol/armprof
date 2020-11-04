@@ -1,0 +1,23 @@
+.btn--favorite {
+	background-image: url('../images/icons/icon-favorite.png');
+}
+
+.btn--favorite:hover {
+	background-image: url('../images/icons/icon-favorite-red.png');
+}
+
+.btn--compare {
+	background-image: url('../images/icons/icon-compare.png');
+}
+
+.btn--compare:hover {
+	background-image: url('../images/icons/icon-compare-red.png');
+}
+
+.btn--cart {
+	background-image: url('../images/icons/icon-cart.png');
+}
+
+.btn--cart:hover {
+	background-image: url('../images/icons/icon-cart-red.png');
+}
