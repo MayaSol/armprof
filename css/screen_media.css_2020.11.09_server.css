@@ -211,6 +211,7 @@
     .news-slider-wrp ul {
         position: static;
         width: auto;
+        list-style: none
     }
 
     .produkt-wrp .category-wrp {
@@ -1197,9 +1198,7 @@
 
     .call-block {
         height: 200px;
-        padding-top: 15px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-top: 15px
     }
 
     .fut-copy {
@@ -1332,10 +1331,6 @@
         height: 300px
     }
 
-    .produkt-slider-for.slick-slider .slick-list {
-        width: 100%;
-    }
-
     .category-item .ct-discript,
     .map-block {
         height: initial
@@ -1368,20 +1363,6 @@
     .cols4 .item {
         width: 100%;
         border-left: none
-    }
-
-    .about-right {
-        margin-left: 0;
-        padding-left: 0;
-    }
-
-    .about-left {
-        order: -1;
-    }
-
-    .about-block {
-        display: flex;
-        flex-direction: column;
     }
 
     table.cert td {
@@ -1720,7 +1701,7 @@
 
     .call-block a {
         margin-left: 0;
-        margin-top: 15px;
+        margin-top: 15px
     }
 
     .call-block p {

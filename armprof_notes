@@ -1,16 +1,113 @@
-http://3.armprof.ru/ 
+http://3.armprof.ru/
 
 https://www.armprof.ru/catalog/zadvizhki-klinovye/
 https://www.armprof.ru/catalog/zadvizhki-klinovye/DOMEX-F4-RC-DN40-DN300/
 
 =====================================
-04.11.2020
+09.11.2020
+========================================
+Надо, чтобы быстрее отоюражался первый экран.
+Для этого надо вынести в html в инлайн критичную css и js, которая нужна для отображения первой страницы.
+А осталные скрипты и стили загружать асинхронно, чтоюы они не тормозили отображение страницы.
+Но это надо делать отдельно для каждой страницы, потому что для каждой станицы будут разные критичные стили.
+
+=====================================
+07.11.2020
 ========================================
 
+1. https://www.armprof.ru/articles/vidy-soedinitelnyh-muft/
+
+1. В блоке category-wrp убрать обертку <div class="category-line clearfix">
+
+Оставить так:
+
+<div class="category-wrp">
+    <div class="category-item">
+        ...
+    </div>
+    <div class="category-item">
+        ...
+    </div>
+</div>
 
 
-<div class="clearfix category-wrp">
+2.Вынести блок с каталогом из about-left, чтобы он шел за about-left внутри about-block
+
+
+file:///home/helloworld/Work/armprof/article.html
+
+------------------------------------------------------
+
+https://www.armprof.ru/articles/vidy-soedinitelnyh-muft/
+надо убрать http://joxi.ru/8AnXJ34FzldvJm
+
+еще неплохо бы этот блок переместить ПОД статью
+
+https://www.armprof.ru/catalogs/
+https://www.armprof.ru/otzyvy/
+
+ту слетела, была как бы таблица а стало в столбик
+
+
+=====================================
+05.11.2020
+========================================
+На странице https://www.armprof.ru/articles/markirovka-i-oboznachenie-truboprovodnoy-armatury/
+добавить трем таблицам класс table-figures:
+
+    <h4>Таблица фигур</h4>
+    <table class="table-figures">
+        ...
+    </table>
+    <table class="table-figures" style="margin-bottom: 40px;">
+        ...
+    </table>
+    <h4>Графические обозначения направления потока жидкости, воздуха, линии механической связи, регулирования, элементов привода</h4>
+    <table class="table-figures">
+        ...
+    </table>
+
+
+https://www.armprof.ru/articles/markirovka-i-oboznachenie-truboprovodnoy-armatury/
+
+=====================================
+04.11.2020
+========================================
+file:///home/helloworld/Work/armprof/catalog_3.html
+
+1. Добавить <div class="category-inner">:
+
+<div class="category-wrp">
     <div class="category-inner">
+        <div class="cat-item-line">
+        <div class="cat-item-line">
+        <div class="cat-item-line">
+    </div>
+</div>
+
+Можно убрать класс clearfix у category-wrp и cat-item-line
+
+2. Таблицы обернуть в блок <div class="table-wrapper">
+
+Добавить таблице 'Максимальное давление P max' класс table-pmax
+
+<strong>Максимальное давление P max</strong></p>
+    <div class="table-wrapper">
+        <table class="table-pmax">
+        ...
+        </table>
+    </div>
+
+Таблице 'Размеры' класс table-sizes:
+
+<h6>Таблица размеров</h6>
+<div class="table-wrapper">
+    <table class="table-sizes" style="width: 900px;">
+    ...
+    </table>
+</div>
+
+
 
 =====================================
 29.10.2020
@@ -20,7 +117,7 @@ https://www.armprof.ru/producers/ige/
 https://www.armprof.ru/producers/
 по блокам Н1 и хк, у нас на других страницах по другому, с отступами
 
-2.еще тут https://www.armprof.ru/catalog/zadvizhki-klinovye/DOMEX-F4-RC-DN40-DN300/ подслетело http://joxi.ru/l2Zv537Sz4B9e2
+2. еще тут https://www.armprof.ru/catalog/zadvizhki-klinovye/DOMEX-F4-RC-DN40-DN300/ подслетело http://joxi.ru/l2Zv537Sz4B9e2
 
 3. а тут может увеличить иконки http://joxi.ru/brRD1d3u7eNjN2 чтобы были соразмерны по высоте с кнопкой "заказать"?
 
@@ -32,7 +129,6 @@ https://www.armprof.ru/producers/
 script.js
 screen.css
 
-
 1.https://www.armprof.ru/producers/domex/
 
 К списку товаров <div class=" category_products_wrap"> добавить обертку <div class="category-products">:
@@ -43,7 +139,7 @@ screen.css
     </div>
 </div>
 
-2. 
+2.
 
 =====================================
 15.10.2020
