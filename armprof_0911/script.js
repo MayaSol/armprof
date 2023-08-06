@@ -515,30 +515,6 @@ $(document).ready(function () {
     // instead of a settings object
     ]
   });
-  $('.product-slider').slick({
-    dots: true,
-    infinite: false,
-    slidesToShow: 5,
-    slidesToScroll: 5,
-    responsive: [{
-      breakpoint: 1020,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    }, {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    } 
-    ]
-  });
-
-
   /*    $(".for-play").click(function () {
           $("#video")[0].play();
       });
@@ -815,7 +791,7 @@ $(document).ready(function () {
   $('.category-products-btns .btn').click(function (event) {
     var containerClass = $(this).data('container');
     var container = $('.' + containerClass);
-    container.removeAttr('data-grid');
+    container.removeAttr('class');
     container.addClass(containerClass);
     container.addClass($(this).data('class'));
   }); //Запуск и остановка видео в слайдере на гланой
@@ -1016,18 +992,4 @@ function add_to_fav(id, btn) {
       $("#count-fav-prod").text(response);
     }
   });
-}
-
-function deleteFromCart(id){
-    jQuery.ajax({
-        url: "/classes/Sibloma.php",
-        type: "POST",
-        data: { "delete": id },
-        success: function(response) {
-            //alert("#item-cart-"+id);
-            $('.btn--cart .action-amount').text(parseInt($('.btn--cart .action-amount').text()) - 1);
-            loadFunc();
-            $(".item-cart-"+id).css("display", "none");
-        }
-    });
 }

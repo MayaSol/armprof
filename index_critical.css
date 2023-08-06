@@ -1,0 +1,126 @@
+.btn,.tns-slider>.tns-item {
+	-webkit-box-sizing: border-box
+}
+
+.main-slider-arrows,.tns-controls {
+    -webkit-transform: translateY(-50%);
+    top: 50%
+}
+
+.breadcrums,.btn {
+    text-overflow: ellipsis
+}
+
+.action-btn-list,.cite-block ul,.header-menu-main,.left-menu ul,.paginator ul {
+    list-style: none
+}
+
+.category-item,.category-txt-wrp,.header-phones-block .left-block,.menu-open-block-inner,.modal__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal
+}
+
+.btn,.tns-vpfix {
+    white-space: nowrap
+}
+
+.tns-outer,.total-wrp {
+    position: relative
+}
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline
+}
+
+.btn,.captcha td.img,.video-left-bg,.video-left-txt,.video-top-layer .video-img {
+    vertical-align: middle
+}
+
+body,html {
+    height: 100%
+}
+
+a img,fieldset,img {
+    border: none
+}
+
+.btn,button,input {
+    margin: 0;
+    border: 0
+}
+
+button,input[type=submit] {
+    cursor: pointer
+}
+
+button,input {
+    padding: 0
+}
+
+a,a:focus,button,h1,h2,h3,h4,h5,h6,input,select,span,textarea {
+    outline: 0
+}
+
+.btn {
+    box-sizing: border-box;
+    display: inline-block;
+    max-width: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    font-size: 1em;
+    font-family: inherit;
+    line-height: normal;
+    text-decoration: none;
+    text-transform: none;
+    color: inherit;
+    background-color: transparent;
+    background-image: none;
+    cursor: pointer;
+    overflow: hidden
+}
+
+.btn--main {
+    color: #fff;
+    background-color: red;
+    border-radius: 4px;
+    padding: 15px 20px 13px
+}
+
+.header-search,body {
+    background-color: #fff
+}
+
+table,table.cert {
+    border-spacing: 0;
+    border-collapse: collapse
+}
+
+body {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
+    font-family: open_sansregular,sans-serif;
+    min-width: 1001px
+}
+
+.total-wrp {
+    min-height: 100%;
+    margin: 0 auto;
+    min-width: 1001px;
+    max-width: 1310px
+}
+
+.category-products,.category-top,.centr-block,.produkt-wrp,.red-menu-inner,header {
+    margin: 0 auto;
+    width: 1230px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+

@@ -3,13 +3,313 @@ http://3.armprof.ru/
 https://www.armprof.ru/catalog/zadvizhki-klinovye/
 https://www.armprof.ru/catalog/zadvizhki-klinovye/DOMEX-F4-RC-DN40-DN300/
 
+https://www.armprof.ru/catalog/germetizaciya/integra-gliwice-sm-duo/
+
+https://developers.google.com/speed/pagespeed/insights/
+https://www.armprof.ru/catalog/germetizaciya/integra-gliwice-sm-duo/
+
+
+
+======================================================================
+06.08.2023
+======================================================================
+Хочу переделать на https://www.armprof.ru/producers/domex/ блок "Продукция..."
+вместо карточек товара хочу вывести иконки и ссылки на разделы
+типа "Клиновые задвижки Domex"
+убрать все лишнее, должно получиться так http://joxi.ru/zAN0nQKu6Z4Llm только иконка раздела вместо картинки
+ну и высоту карточки. если она задана жестко отрегулировать под новые реалии
+размер иконки примерно как размер картинки
+
+
+----------------------------
+
+<div class="category-products category-products--sections">
+<div class="category-item category-item--section">
+
+======================================================================
+10.04.2023
+======================================================================
+1. а еще у модалок некрасиво
+http://joxi.ru/gmv7yOxcqXOQo2
+а в мобиле вообще плохо модалкам
+
+2.
+еще можешь показать скрином в отладчике как будет если на мобиле убрать этот пропуск http://joxi.ru/n2YOPBwFbxNRgr
+
+--------------------------------------------------------------------
+
+
+1. Блоки 
+<a id="ContactCall" 
+и
+<a id="ContactMail" 
+поместить в конец блока <head> на https://www.armprof.ru/ 
+так же как и на страницах регионов
+
+Блок <div class="search-example"> перенести в конец блока <head>
+на всех главных страницах - и общей, и региональных
+
+
+
+2. Блок <div class="header-phones-block" заменить на два блока на общей главной:
+
+<div class="header-phones-block header-phones-block--right">
+    <div class="header-phones-block-inner">
+        <p class="phone">+7 (812) 702-70-81</p>
+        <p class="text">Пн-Пт с 09:00 до 18:00</p>
+    </div>
+</div>
+<div class="header-phones-block header-phones-block--left">
+    <div class="header-phones-block-inner">
+        <p class="phone">8 (800) 222-70-81</p>
+        <p class="text">Бесплатно для всей России</p>
+    </div>
+</div>
+
+На страницах с одним телефоном оставить только
+<div class="header-phones-block header-phones-block--right" 
+
+
+3. Заменить
+<span>Заказать обратный звонок</span>
+на
+<span><i>Заказать обратный звонок</i><i>Обратный звонок</i></span>
+
+
+======================================================================
+
+
+На других страницах регионов тоже убрать style:
+
+<div class="search-example" style="width: 100px;padding-right: 50px;">
+===============================================================
+
+<!-- begin header  -->
+<header class="page-header page-header--msk">
+
+<a id="ContactCall" onclick="yaCounter18939763.reachGoal('callback_open'); return true;" style="float: left;display: block;" class="link recall_lnk"> - убрать style="float: left;display: block;"
+
+<div class="header-search-block" style="width: 500px">  - убрать style="width: 500px"
+<div class="header-search clearfix" style="width: 500px"> - убрать style="width: 500px"
+
+
+
+=====================================
+30.03.2023
+========================================
++ 1.  https://msk.armprof.ru/
+http://joxi.ru/Y2Lj38dhQLak7r
+из-за того что 1 телефон не заметил что съехало
+
+
+Блок <a id="ContactCall"  перенести внурь блока <div class="right-block">, вставить после <a id="ContactMail" 
+style.min.css
+style_media.min.css
+
++ 2. а еще тут https://www.armprof.ru/producers/ должен быть слайдер, слайды есть а прокрутки нет
+
+images/icons/icon-arrow-left.jpg
+
+3. https://www.armprof.ru/catalog/elektroprivody/
+в списке описания двойные маркеры
+
+а когда нажимаешь на смену режима отображения http://joxi.ru/DmBXQ7VFzx30PA то происходит смещение и одна иконка пропадает
++
+
+4. https://www.armprof.ru/catalog/zadvizhki-klinovye-flancevye/
+http://joxi.ru/Q2KnRjWuwdZNGm
+
+=====================================
+22.04.2021
+========================================
+
+1. В карточке продукта обернуть блоки в <div class="produkt-desc">
+
+<div class="produkt-desc">
+    <div class="produkt-garanty">
+    </div>
+    <div class="produkt-spec">
+    </div>
+    <div class="produkt-price-wrp">
+    </div>
+    <div class="produkt-controls">
+    </div>
+</div>
+
+
+2. Для обратной связи взять разметку из блока <div class="call-block"></div> https://www.armprof.ru/catalog/zadvizhki-klinovye/
+вместо
+<div class="qwestion clearfix"></div>
+
+
+
+небольшие правки по армпрофу
+
+https://www.armprof.ru/catalog/prochaya/opornye-plity-dlya-koverov/ 
+
+убрать центровку фото, выровнять по левому краю
+
+http://joxi.ru/5mdkOGlC3j4D7r этот блок был на всю ширину, кнопка была по правому краю выровнена
+
+=====================================
+26.03.2021
+========================================
+1. по амрпрофу - товар удаляется, но не меняется без перезагрузки счетчик товара в корзине
+если был 1, то после уадления так 1 и остается
+
+2. 
+
+=====================================
+30.12.2020
+========================================
+
+1. В блоке 'Так же рекомендуем'  (заголовок <p class="recomend-head">Так же рекомендуем</p>)
+убрать обертку <div class="category-wrp category_products_wrap category-products--grid">
+на всех страницах, где есть этот блок
+
+2. В этом же блоке добавить класс product-slider:
+<div class="category-products-inner product-slider">
+
+3. На страницах, где есть <aside class="aside-menu">, например https://www.armprof.ru/catalog/zadvizhki-klinovye/
+к блоку category-products добавить класс category-products--aside :
+
+<div class="category-products category-products--aside">
+
+
+4. Добавить icon-close-red.png - в image/icons
+
+
+
+=====================================
+06.12.2020
+========================================
+
+Обернуть блок <div class="select_dn"> в <div class="produkt-size">.
+
+После <div class="select_dn"> внутри <div class="produkt-size"> добавить:
+
+<div class="produkt-avail">
+    <span class="avail-text">В наличии</span>
+    <span class="avail-text-no">Нет в наличии</span>
+</div>
+
+Для статуса 'Нет в наличии' добавить класс produkt-avail--no
+
+
+=====================================
+30.11.2020
+========================================
+нашел еще косячок на армпрофе, думал исправили
+https://www.armprof.ru/catalog/homuty-remontnye/
+http://joxi.ru/bmooqBDS3BwN1m черта у первого элемента
+
+screen.min.css
+screen-media.min.css
+
+На всех страницах поставщиков
+https://www.armprof.ru/producers/domex/
+<div class="category-products"> добавить класс centr-block
+
+
+
+=====================================
+09.11.2020
+========================================
+По армпрофу не надо подоключать utils.js, только utils.min.js.
+Неминимизированный нужен для редактирования.
+
+1. Убрать совсем на всех страницах:
+slick-theme.css
+slick.css
+jquery.multiselect.css
+jquery.formstyler.min.css
+jquery-ui.css
+prettyPhoto.css
+
+Вместо них utils.min.css
+
+
+
+2. Только для главной заменить стили в head:
+
+<link rel="stylesheet" href="/design/default/css/screen.min.css" />
+
+на это (чтобы стили загружались асинхронно):
+
+<link rel="preload" href="screen.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="screen.min.css"></noscript>
+
+
+
+3. В head вставить содержимое этого файла
+
+
+
+
+
+
+
 =====================================
 09.11.2020
 ========================================
 Надо, чтобы быстрее отоюражался первый экран.
 Для этого надо вынести в html в инлайн критичную css и js, которая нужна для отображения первой страницы.
-А осталные скрипты и стили загружать асинхронно, чтоюы они не тормозили отображение страницы.
+А остальные скрипты и стили загружать асинхронно, чтобы они не тормозили отображение страницы.
 Но это надо делать отдельно для каждой страницы, потому что для каждой станицы будут разные критичные стили.
+
+
+1.script.js
+2.utils.js
+3.utils.min.css
+4.utils.map.css
+
+Убрать везде
+------------------------------------------------
+<script type="text/javascript" src="/design/default/js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+Убрать только на главной
+------------------------------------------------
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+ - .styler(); и .multiselect
+<script type="text/javascript" src="/design/default/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script type="text/javascript" src="/design/default/js/jquery.multiselect.min.js"></script>
+<script type="text/javascript" src="/design/default/js/jquery.formstyler.min.js"></script>
+<script type="text/javascript" src="/design/default/js/prettyPhoto/jquery.prettyPhoto.js"></script>
+
+
+jquery.touchSwipe.min.js - убрать
+jquery.min.js - убрать ( в utils.js)
+jquery-migrate-1.2.1.min.js - убрать ( в utils.js)
+
+
+Добавить атрибут async везде
+------------------------------------
+    <script type="text/javascript" src="https://lab01.ru/js/api_js.js" async></script>
+    <script type="text/javascript" src="/design/default/js/knopkavverh.js" async></script>
+
+
+
+api_js.js
+konpkavverh.js
+functions.js
+
+---
+
+??? carouFredSel - оставить, но добавить async? - убрать только на главной
+
+
+Отложить ?
+screen_print.css
+
+Убрать  везде
+prettyPhoto.css
+slick-theme.css
+slick.css
+jquery.multiselect.css
+
 
 =====================================
 07.11.2020

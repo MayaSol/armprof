@@ -11,3 +11,8 @@ video_new/
 temp/
 img/temp/
 node_modules/
+test/
+tests/
+test.*
+design/
+js/jquery-ui-1.10.4/
