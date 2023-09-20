@@ -74,7 +74,8 @@ gulp.task('bundle', () =>
 
 
 gulp.task('css', () => {
-  var files = ['./css/screen.css', './css/screen_media.css', 'csscritical.css'];
+  var files = ['./css/screen.css']
+  //, './css/screen_media.css', 'csscritical.css'];
 
 
   var tasks = files.map(function(file) {
