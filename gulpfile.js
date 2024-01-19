@@ -19,7 +19,7 @@ gulp.task('js', () =>
         .pipe(babel({
             presets: [
             ['@babel/preset-env',
-	            {  
+	            {
 			        "useBuiltIns": "entry",
 			        "corejs": 3,
 	            	"targets": {
@@ -87,6 +87,7 @@ gulp.task('css', () => {
         path.extname = ".min.css";
       }))
       // .pipe(sourcemaps.write('.'))
+      // .pipe(gulp.dest('./old/2023.08.06/server'))
       .pipe(gulp.dest('./css'))
   })
 

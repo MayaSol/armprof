@@ -2320,7 +2320,7 @@ textarea.contact-popup2-text {
 }
 
 .content p {
-    line-height: 18px;
+    line-height: 24px;
     font-size: 14px;
     margin: 10px 0;
     color: #747a81
@@ -2538,7 +2538,6 @@ h6 {
     white-space: nowrap;
     font-size: 11px;
     letter-spacing: -.28px;
-    text-transform: capitalize
 }
 
 .breadcrums a,
@@ -2549,7 +2548,6 @@ h6 {
     margin-right: 5px;
     text-decoration: none;
     font-weight: 400;
-    text-transform: capitalize
 }
 
 .breadcrums span {
@@ -4802,7 +4800,7 @@ p.mih-head b {
 
 .about-right {
     float: right;
-    width: 210px;
+    width: 300px;
     padding: 20px 0 25px 30px;
     border-left: 1px solid #ecedf1;
     margin-left: 30px;
