@@ -326,6 +326,7 @@ function cartBtnMain(instance) {
 
 //  Модалка корзины
 var setCartTooltip = function setCartTooltip(btn) {
+    console.log('setCartTooltip');
     var template = getTemplate(btn, '.tooltip--cart');
 
     if (template.length == 0) {
@@ -349,7 +350,8 @@ var setCartTooltip = function setCartTooltip(btn) {
                 cartBtnMain(instance);
             }
         };
-        tippy(btn, tooltipCartOpt);
+        let instance = tippy(btn, tooltipCartOpt);
+        console.log({...instance});
     }
 };
 

@@ -8174,7 +8174,7 @@ p.producer-type {
 }
 
 
-/*//Таблица на вкладке товара - Цены*/
+/*!//Таблица на вкладке товара - Цены*/
 .main-table__tab-block-wrapper {
     font-size: 14px;
 }
@@ -8360,4 +8360,14 @@ p.producer-type {
     .sale-item__share-fav-btns_mobile {
         display: flex;
     }
+}
+
+/*! Модалка Оформить заказ */
+
+.ui-dialog #Dialog3 {
+    height: 100vh !important;
+}
+
+#Dialog3 .ui-dialog .contact-popup-tit {
+    margin-left: 60px;
 }
